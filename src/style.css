@@ -1,0 +1,115 @@
+@import "tailwindcss";
+
+
+
+
+@theme {
+  --color-verde-200:#ACEF75;
+  --color-verde-300:#91EE77;
+  --color-verde-400:#17E880;
+  --color-verde-700:#2E482C;
+  --color-verde-800:#16281F;
+  --color-verde-900:#0F1C15;
+  --color-verde-950:#030504;
+
+  
+  @keyframes slideIn {
+    from {
+      opacity: 0;
+      transform: translate3d(-20px, 0, 0);
+    }
+    to {
+      opacity: 1;
+      transform: translate3d(0, 0, 0);
+    }
+  }
+
+    @keyframes fadeIn {
+    from {
+      opacity: 0;
+
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  --animate-slideIn: slideIn 0.4s ease-in-out forwards;
+  --animate-fadeIn: fadeIn 0.4s ease-in-out forwards;
+
+  --animation-delay-1:100ms;
+  --animation-delay-2:200ms;
+  --animation-delay-3:300ms;
+  --animation-delay-4:400ms;
+
+  --font-sans: 'DM Sans', 'system-ui', 'sans-serif';
+  --font-serif: 'Dm Serif Text', 'Georgia', 'serif';
+}
+
+@utility animation-* {
+  animation-delay: --value(--animation-delay-*);
+}
+
+@layer components {
+  .btn {
+    @apply flex items-center gap-2 bg-gradient-to-br text-verde-950 py-2 px-4 rounded-4xl from-verde-200 via-verde-300 to-verde-400 cursor-pointer filter hover:brightness-110 hover:ring-amber-300
+  }
+
+  .neon {
+    @apply rounded-full border border-verde-200 bg-gradient-to-b from-verde-200 to-verde-400 text-verde-900;
+    box-shadow: 0 1px 4px 1px theme(colors.verde.200 / 80%), inset 0 -1px 2px theme(colors.verde.200) ;
+  }
+
+  .input {
+    @apply bg-verde-800 rounded-lg p-2 block max-w-full focus:outline-none focus:ring-2 focus:border-verde-900 focus:ring-verde-300 placeholder:text-verde-950 text-white w-full
+  }
+
+  .radial-gradient {
+    background-image: radial-gradient(
+      50% 100% at 50% 0%,
+      theme(colors.verde.700) 0%,
+      theme(colors.verde.800) 100%
+    );
+  }
+
+}
+
+.container {
+  width: 100%;
+  /* sm */
+  @media (width >= 640px) {
+    max-width: 40rem;
+  }
+  /* md */
+  @media (width >= 768px) {
+    max-width: 48rem;
+  }
+  /* lg */
+  @media (width >= 1024px) {
+    max-width: 64rem;
+  }
+  /* xl */
+  @media (width >= 1280) {
+    max-width: 80rem;
+  }
+  /* 2xl */
+  @media (width >= 1536px) {
+    max-width: 96rem;
+  }
+}
+
+@utility container {
+  margin: 0 auto;
+  padding: 0 0.5rem;
+  @media (width >= 40rem) {
+    padding: 0 1rem;
+  }
+}
+
+
+.active {
+  display: flex;
+}
+
+
+
