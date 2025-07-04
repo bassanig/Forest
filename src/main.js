@@ -3,6 +3,8 @@ import './style.css';
 const mobileBTN = document.querySelector('.js-btn');
 const mobileNav = document.querySelector('.js-mobileNav');
 
+mobileNav.classList.add('hidden')
+
 mobileBTN.addEventListener('click', () => {
     mobileNav.classList.toggle('hidden');
     mobileNav.classList.toggle('flex');
