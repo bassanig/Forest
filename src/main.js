@@ -31,4 +31,4 @@ dia.innerText = new Date().toLocaleDateString("pt-BR", {
 
 console.log(numeroRandom);
 
-video.src = numeroRandom < 25 ? 'Forest/public/imgs/video_chuva.mp4' : 'Forest/public/imgs/video_sol.mp4';
+video.src = numeroRandom < 25 ? '/Forest/public/imgs/video_chuva.mp4' : '/Forest/public/imgs/video_sol.mp4';
