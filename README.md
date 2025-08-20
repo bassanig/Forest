@@ -2,7 +2,7 @@ Projeto final do curso de Tailwind CSS.
 
 Este site apresenta uma experiência imersiva de hospedagem na floresta, com interface responsiva, animações e recursos visuais modernos. O projeto foi desenvolvido para praticar e demonstrar os principais conceitos do Tailwind CSS, incluindo layouts flexíveis, gradientes, responsividade, customização de temas e integração de mídias (imagens, SVGs e vídeos).
 
-<img width="3840" height="1080" alt="image" src="https://github.com/user-attachments/assets/f099bca4-81a0-40ec-bcc2-07dd58c92666" />
+<img width="1905" height="1076" alt="image" src="https://github.com/user-attachments/assets/fc1aa2e9-430d-40c5-905a-302dbba0d471" />
 
 ## Funcionalidades
 
